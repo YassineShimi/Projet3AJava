@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="671.0" prefWidth="814.0" styleClass="normalBtn" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionevents.controllers.AfficherEvenementController">
+   <children>
+      <ScrollPane fx:id="scrollpane" layoutY="14.0" prefHeight="402.0" prefWidth="783.0" styleClass="pane_top" stylesheets="@style.css">
+         <content>
+            <VBox fx:id="EvenementVBox" prefHeight="401.0" prefWidth="843.0" styleClass="hBox_main" stylesheets="@style.css" />
+         </content>
+      </ScrollPane>
+      <Button fx:id="deleteBtn" layoutX="305.0" layoutY="622.0" mnemonicParsing="false" onAction="#OnClickedSupprimer" styleClass="btnQuit" stylesheets="@style.css" text="delete " />
+      <Button fx:id="selectImageUpdate" layoutX="94.0" layoutY="472.0" mnemonicParsing="false" onAction="#OnClickedSelectImageUpdate" prefHeight="26.0" prefWidth="150.0" styleClass="normalBtn" stylesheets="@style.css" text="select Image update " />
+      <TextField fx:id="themeEventUpdate" layoutX="95.0" layoutY="507.0" stylesheets="@style.css" />
+      <TextField fx:id="typeEventUpdate" layoutX="95.0" layoutY="546.0" stylesheets="@style.css" />
+      <TextField fx:id="nbrParticipantUpdate" layoutX="285.0" layoutY="520.0" prefHeight="26.0" prefWidth="175.0" stylesheets="@style.css" />
+      <DatePicker fx:id="dateDebutUpdate" layoutX="285.0" layoutY="436.0" />
+      <DatePicker fx:id="dateFinEventUpdate" layoutX="285.0" layoutY="473.0" />
+      <ChoiceBox fx:id="publiciteIDUpdate" layoutX="94.0" layoutY="436.0" prefWidth="150.0" styleClass="pane_back_body" stylesheets="@style.css" />
+      <Button fx:id="updateEventBtn" layoutX="230.0" layoutY="622.0" mnemonicParsing="false" onAction="#OnClickedUpdateEvent" styleClass="btnQuit" stylesheets="@style.css" text="update" />
+      <Button fx:id="BackBtn" layoutX="169.0" layoutY="622.0" mnemonicParsing="false" onAction="#OnClickedBack" styleClass="btnQuit" stylesheets="@style.css" text="Back" />
+      <Button fx:id="StatBtn" layoutX="95.0" layoutY="624.0" mnemonicParsing="false" onAction="#OnClickedStat" text="Statistique" />
+      <PieChart fx:id="pieChart" layoutX="527.0" layoutY="443.0" prefHeight="246.0" prefWidth="315.0" />
+   </children>
+</AnchorPane>

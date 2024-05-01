@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="normalBtn" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionevents.controllers.AjouterEvenementController">
+   <children>
+      <Label layoutX="57.0" layoutY="63.0" styleClass="btn_conf" stylesheets="@style.css" text="publicite_id" />
+      <ChoiceBox fx:id="publiciteId" layoutX="165.0" layoutY="59.0" prefWidth="150.0" styleClass="side_left" stylesheets="@style.css" />
+      <Label layoutX="57.0" layoutY="108.0" prefHeight="18.0" prefWidth="109.0" styleClass="btn_conf" stylesheets="@style.css" text="image_evenement" />
+      <Label layoutX="57.0" layoutY="142.0" prefHeight="18.0" prefWidth="100.0" styleClass="btn_conf" stylesheets="@style.css" text="theme_evenement" />
+      <Label layoutX="57.0" layoutY="176.0" prefHeight="18.0" prefWidth="100.0" styleClass="btn_conf" stylesheets="@style.css" text="type_evenement" />
+      <Label layoutX="57.0" layoutY="214.0" prefHeight="18.0" prefWidth="92.0" styleClass="btn_conf" stylesheets="@style.css" text="date_debut" />
+      <Label layoutX="57.0" layoutY="252.0" prefHeight="18.0" prefWidth="61.0" styleClass="btn_conf" stylesheets="@style.css" text="date_fin" />
+      <Label layoutX="57.0" layoutY="290.0" prefHeight="18.0" prefWidth="110.0" styleClass="btn_conf" stylesheets="@style.css" text="nbr_participant" />
+      <Button fx:id="Image" layoutX="168.0" layoutY="105.0" mnemonicParsing="false" onAction="#OnClickedSelectImage" prefHeight="26.0" prefWidth="150.0" styleClass="normalBtn" stylesheets="@style.css" text="Select Image " />
+      <TextField fx:id="themeEvent" layoutX="168.0" layoutY="138.0" />
+      <TextField fx:id="typeEvent" layoutX="166.0" layoutY="173.0" />
+      <TextField fx:id="nbrParticipant" layoutX="169.0" layoutY="287.0" />
+      <DatePicker fx:id="DateDebutEvent" layoutX="162.0" layoutY="211.0" stylesheets="@style.css" />
+      <DatePicker fx:id="DateFinEvent" layoutX="162.0" layoutY="248.0" stylesheets="@style.css" />
+      <Button fx:id="AjouterEventBtn" layoutX="418.0" layoutY="138.0" mnemonicParsing="false" onAction="#OnClickedAjouterEvent" styleClass="btnQuit" stylesheets="@style.css" text="ajouter " />
+      <Button fx:id="backBtn" layoutX="533.0" layoutY="14.0" mnemonicParsing="false" onAction="#onclickedback" styleClass="btnQuit" stylesheets="@style.css" text="back" />
+   </children>
+</AnchorPane>

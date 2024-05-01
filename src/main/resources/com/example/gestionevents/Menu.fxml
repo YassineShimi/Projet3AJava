@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" styleClass="normalBtn" stylesheets="@style.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.gestionevents.controllers.MenuController">
+   <children>
+      <Button fx:id="ajouterParticipantBtn" layoutX="47.0" layoutY="138.0" mnemonicParsing="false" onAction="#OnClickedAjouterParticipant" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Ajouter participant" />
+      <Button fx:id="AjouterEvenementBtn" layoutX="389.0" layoutY="95.0" mnemonicParsing="false" onAction="#OnClickedEvenmentAjouter" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Ajouter Evenement" />
+      <Button fx:id="AfficherEvenementBtnFront" layoutX="47.0" layoutY="95.0" mnemonicParsing="false" onAction="#OnClickedAfficherEventFront" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Afficher Evenement " />
+      <Button fx:id="AfficherPubliciteBtn" layoutX="389.0" layoutY="268.0" mnemonicParsing="false" onAction="#OnClickedAfficherPublicite" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Afficher Publicite" />
+      <Button fx:id="AjouterPubliciteBtn" layoutX="389.0" layoutY="226.0" mnemonicParsing="false" onAction="#OnClickedAjouterPublicite" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Ajouter Publicite" />
+      <Button fx:id="AfficherParicipantBtn" layoutX="389.0" layoutY="187.0" mnemonicParsing="false" onAction="#OnClickedAfficherParticipant" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Afficher Participant " />
+      <Label graphicTextGap="50.0" layoutX="86.0" layoutY="30.0" prefHeight="50.0" prefWidth="66.0" styleClass="btn_conf" stylesheets="@style.css" text="Client view">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="50.0" layoutX="437.0" layoutY="35.0" prefHeight="50.0" prefWidth="76.0" styleClass="btn_conf" stylesheets="@style.css" text="Admin view">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Button fx:id="AfficherEvenementBtnBack" layoutX="389.0" layoutY="138.0" mnemonicParsing="false" onAction="#OnClickedAfficherEventBack" prefHeight="26.0" prefWidth="156.0" styleClass="btnQuit" stylesheets="@style.css" text="Afficher Evenement " />
+   </children>
+</AnchorPane>
