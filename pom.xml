@@ -5,13 +5,18 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>org.example</groupId>
+<<<<<<< HEAD
     <artifactId>Gestion_Expositions</artifactId>
+=======
+    <artifactId>CRUD</artifactId>
+>>>>>>> 24f357d8445443fb0eeef550a746a7f4ad51d184
     <version>1.0-SNAPSHOT</version>
 
     <properties>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+<<<<<<< HEAD
     </properties>
     <dependencies>
         <dependency>
@@ -35,6 +40,16 @@
             <version>21</version>
         </dependency>
 
+=======
+
+    </properties>
+    <dependencies>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+            <version>8.0.33</version>
+        </dependency>
+>>>>>>> 24f357d8445443fb0eeef550a746a7f4ad51d184
     </dependencies>
 
 </project>
