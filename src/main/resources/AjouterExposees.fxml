@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="589.0" prefWidth="801.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ExposeesControllers">
+    <tabs>
+        <Tab text="Ajouter Exposition">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="420.0" prefWidth="648.0">
+                    <children>
+                  <ImageView fitHeight="685.0" fitWidth="890.0" layoutY="-28.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@app/img/src/ajoutbg.jpg" />
+                     </image>
+                  </ImageView>
+                        <Label layoutX="230.0" layoutY="135.0" text="Nom :">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="230.0" layoutY="181.0" text="Date de début :">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="230.0" layoutY="235.0" text="Date de fin : ">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="230.0" layoutY="284.0" text="Choisissez L'image : ">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <TextField fx:id="txtNom" layoutX="317.0" layoutY="131.0" prefHeight="26.0" prefWidth="174.0" />
+                        <DatePicker fx:id="txtDd" layoutX="318.0" layoutY="177.0" />
+                        <DatePicker fx:id="txtDf" layoutX="319.0" layoutY="231.0" />
+                        <Button fx:id="btnImg" layoutX="363.0" layoutY="279.0" mnemonicParsing="false" onAction="#selectImg1" prefHeight="41.0" prefWidth="100.0" styleClass="split-button" stylesheets="@buttons.css" text="Browse" />
+                        <Separator layoutX="226.0" layoutY="166.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="236.0" layoutY="269.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="226.0" layoutY="216.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="297.0" layoutY="343.0" prefWidth="200.0" />
+                        <Button fx:id="btnSave" layoutX="273.0" layoutY="364.0" mnemonicParsing="false" onAction="#create" prefHeight="41.0" prefWidth="96.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Save" />
+                        <Label layoutX="8.0" layoutY="14.0" prefHeight="14.0" prefWidth="365.0" text="Ajouter une Exposition : " textFill="#265e31">
+                            <font>
+                                <Font name="Forte" size="18.0" />
+                            </font>
+                     <cursor>
+                        <Cursor fx:constant="DISAPPEAR" />
+                     </cursor>
+                        </Label>
+                        <Button fx:id="btnRet1" layoutX="415.0" layoutY="366.0" mnemonicParsing="false" onAction="#retour1" prefHeight="41.0" prefWidth="102.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Retour" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

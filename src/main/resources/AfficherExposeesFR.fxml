@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane prefHeight="698.0" prefWidth="1070.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherExposeesFRController">
+   <children>
+      <ImageView fitHeight="714.0" fitWidth="1113.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@app/img/src/bg.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollpane" layoutY="305.0" prefHeight="390.0" prefWidth="1070.0">
+         <content>
+            <VBox fx:id="ExposeesVBox" prefHeight="388.0" prefWidth="1068.0" />
+         </content>
+      </ScrollPane>
+      <Button layoutX="30.0" layoutY="69.0" mnemonicParsing="false" onAction="#generate" styleClass="split-button" text="Generate QR">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <TextField fx:id="searchidname" layoutX="27.0" layoutY="130.0" prefHeight="41.0" prefWidth="222.0" />
+      <Button fx:id="sortnd" layoutX="253.0" layoutY="227.0" mnemonicParsing="false" onAction="#sortnamedesc" styleClass="split-button" text="Sort By Name Desc">
+         <stylesheets>
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="search2" layoutX="48.0" layoutY="226.0" mnemonicParsing="false" onAction="#sortnameasc" styleClass="split-button" text="Sort By Name ASC">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="sortdate" layoutX="450.0" layoutY="227.0" mnemonicParsing="false" onAction="#sortdate" prefHeight="41.0" prefWidth="168.0" styleClass="split-button" text="Sort By Date">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <ImageView fx:id="imageView" fitHeight="176.0" fitWidth="188.0" layoutX="450.0" layoutY="22.0" pickOnBounds="true" preserveRatio="true" />
+      <Separator layoutX="18.0" layoutY="210.0" prefHeight="0.0" prefWidth="668.0" />
+      <Button fx:id="btnret" layoutX="6.0" layoutY="6.0" mnemonicParsing="false" onAction="#ret" prefHeight="23.0" prefWidth="102.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Retour" />
+   </children>
+</AnchorPane>

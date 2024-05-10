@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="699.0" prefWidth="989.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.FrontGExpoController">
+   <children>
+      <BorderPane layoutY="-10.0" prefHeight="50.0" prefWidth="1032.0" style="-fx-background-color: #90EE90;" />
+      <AnchorPane fx:id="anchoraffichageEx" layoutX="-9.0" layoutY="97.0" prefHeight="603.0" prefWidth="1046.0">
+         <children>
+            <Pane layoutX="6.0" layoutY="-1.0" prefHeight="603.0" prefWidth="332.0" />
+            <AnchorPane fx:id="slider" prefHeight="603.0" prefWidth="332.0">
+               <children>
+                  <ImageView fitHeight="603.0" fitWidth="345.0" layoutX="-2.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@app/img/src/front.jpg" />
+                     </image>
+                  </ImageView>
+                  <Button fx:id="BtnExpo" layoutX="8.0" layoutY="135.0" mnemonicParsing="false" onAction="#consulterExpositions" prefHeight="106.0" prefWidth="323.0" styleClass="split-button" stylesheets="@buttons.css" text="Consulter Expositions" />
+                  <Button fx:id="btnProduit" layoutX="8.0" layoutY="323.0" mnemonicParsing="false" onAction="#consulterProduits" prefHeight="106.0" prefWidth="323.0" styleClass="split-button" stylesheets="@buttons.css" text="Consulter Produit" />
+               </children>
+            </AnchorPane>
+         </children>
+      </AnchorPane>
+      <Label fx:id="Menu" layoutX="36.0" layoutY="49.0" prefHeight="38.0" prefWidth="94.0" text="MENU" textFill="#74eacc">
+         <font>
+            <Font name="Nirmala UI" size="13.0" />
+         </font>
+      </Label>
+      <FontAwesomeIconView glyphName="BARS" layoutX="19.0" layoutY="71.0" wrappingWidth="22.599976539611816">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </FontAwesomeIconView>
+      <Separator layoutX="-1.0" layoutY="94.0" prefHeight="0.0" prefWidth="976.0" />
+      <Label fx:id="MenuBack" layoutX="36.0" layoutY="48.0" prefHeight="38.0" prefWidth="94.0" text="MENU" textFill="#74eacc">
+         <font>
+            <Font name="Nirmala UI" size="13.0" />
+         </font>
+      </Label>
+      <Button fx:id="retourFrontBtn" layoutX="934.0" layoutY="46.0" mnemonicParsing="false" onAction="#btnRetFront" styleClass="split-button" stylesheets="@buttons.css" text="Retour" />
+   </children>
+</AnchorPane>

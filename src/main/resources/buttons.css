@@ -1,0 +1,22 @@
+/* Styling for the buttons */
+.split-button {
+    -fx-background-color: #4CAF50; /* Green */
+    -fx-text-fill: white;
+    -fx-font-size: 14px;
+    -fx-padding: 10px 20px;
+    -fx-border-radius: 5px;
+    -fx-background-radius: 5px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 10, 0, 0, 0);
+}
+
+/* Hover effect */
+.split-button:hover {
+    -fx-background-color: #3e8e41; /* Darker green */
+    -fx-cursor: hand;
+}
+
+/* Pressed effect */
+.split-button:pressed {
+    -fx-background-color: #1e8449; /* Even darker green */
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.6), 10, 0, 0, 0);
+}

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Reflection?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="614.0" prefWidth="820.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.ProduitsControllers">
+    <tabs>
+        <Tab text="Ajouter Produit">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="546.0" prefWidth="707.0">
+                    <children>
+                  <ImageView fitHeight="705.0" fitWidth="954.0" layoutX="-2.0" layoutY="-26.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@app/img/src/ajoutbg.jpg" />
+                     </image>
+                  </ImageView>
+                        <Label layoutX="264.0" layoutY="144.0" text="Description :">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="275.0" layoutY="316.0" text="Nom de L'exposition : ">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="265.0" layoutY="193.0" text="Prix :">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <Label layoutX="288.0" layoutY="250.0" text="Choisissez L'image : ">
+                     <font>
+                        <Font name="Dubai Light" size="12.0" />
+                     </font></Label>
+                        <TextField fx:id="txtDescription" layoutX="335.0" layoutY="140.0" prefHeight="26.0" prefWidth="174.0" />
+                        <Button fx:id="btnBrowse" layoutX="399.0" layoutY="235.0" mnemonicParsing="false" onAction="#selectImgp" prefHeight="41.0" prefWidth="104.0" styleClass="split-button" stylesheets="@buttons.css" text="Browse" />
+                        <Separator layoutX="269.0" layoutY="286.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="261.0" layoutY="226.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="262.0" layoutY="174.0" prefHeight="1.0" prefWidth="272.0" />
+                        <Separator layoutX="324.0" layoutY="357.0" prefHeight="2.0" prefWidth="170.0" />
+                        <Button fx:id="btnSaveP" layoutX="305.0" layoutY="374.0" mnemonicParsing="false" onAction="#saveP" prefHeight="48.0" prefWidth="98.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Save" />
+                        <Label layoutX="7.0" layoutY="8.0" prefHeight="14.0" prefWidth="365.0" text="Ajouter un Produit " textFill="#3d563a">
+                            <font>
+                                <Font name="Forte" size="18.0" />
+                            </font>
+                            <effect>
+                                <Reflection />
+                            </effect>
+                        </Label>
+                        <TextField fx:id="txtPrix" layoutX="336.0" layoutY="189.0" prefHeight="26.0" prefWidth="174.0" />
+                        <ChoiceBox fx:id="txtIdExpos" layoutX="398.0" layoutY="311.0" prefHeight="29.0" prefWidth="109.0" />
+                        <Button fx:id="btnRet2" layoutX="430.0" layoutY="373.0" mnemonicParsing="false" onAction="#ret2" prefHeight="50.0" prefWidth="104.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Retour" />
+                    </children></AnchorPane>
+            </content>
+        </Tab>
+    </tabs>
+</TabPane>

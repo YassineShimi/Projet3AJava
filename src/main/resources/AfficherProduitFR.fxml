@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.net.URL?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ScrollPane?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.VBox?>
+
+<?import javafx.scene.control.Pagination?>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="1103.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.AfficherProduitFRController">
+   <children>
+      <ImageView fitHeight="756.0" fitWidth="1103.0" layoutY="-47.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@app/img/src/bg.jpg" />
+         </image>
+      </ImageView>
+      <ScrollPane fx:id="scrollpanel" layoutX="10.0" layoutY="306.0" prefHeight="390.0" prefWidth="1091.0">
+         <content>
+            <VBox fx:id="produitsVBox" prefHeight="387.0" prefWidth="1086.0" />
+         </content>
+      </ScrollPane>
+      <Pagination fx:id="pagination" layoutX="10.0" layoutY="306.0" />
+
+      <Button layoutX="40.0" layoutY="79.0" mnemonicParsing="false" onAction="#generate" styleClass="split-button" text="Generate QR">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <TextField fx:id="searchidnamepr" layoutX="37.0" layoutY="140.0" prefHeight="41.0" prefWidth="222.0" />
+      <Button fx:id="sortnamedescpr" layoutX="263.0" layoutY="237.0" mnemonicParsing="false" onAction="#sortnamedesc" styleClass="split-button" text="Sort By Name Desc">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="sortnameascpr" layoutX="58.0" layoutY="236.0" mnemonicParsing="false" onAction="#sortnameasc" styleClass="split-button" text="Sort By Name ASC">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <Button fx:id="sortprix" layoutX="460.0" layoutY="237.0" mnemonicParsing="false" onAction="#sortprix" prefHeight="41.0" prefWidth="168.0" styleClass="split-button" text="Sort By Prix">
+         <stylesheets>
+            <URL value="@buttonsback.css" />
+            <URL value="@buttons.css" />
+         </stylesheets>
+      </Button>
+      <Separator layoutX="28.0" layoutY="220.0" prefHeight="0.0" prefWidth="668.0" />
+      <Button fx:id="retttt" layoutX="16.0" layoutY="16.0" mnemonicParsing="false" onAction="#retprodBtn" prefHeight="23.0" prefWidth="102.0" styleClass="backend-button" stylesheets="@buttonsback.css" text="Retour" />
+      <ImageView fx:id="imageView" fitHeight="168.0" fitWidth="200.0" layoutX="496.0" layoutY="27.0" pickOnBounds="true" preserveRatio="true" />
+   </children>
+</AnchorPane>
